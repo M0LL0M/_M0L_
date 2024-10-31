@@ -1,0 +1,135 @@
+.navi {
+  height: 200rpx;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navitext {
+  text-align: center;
+  padding-left: 50rpx;
+  line-height: 80rpx;
+  margin-top: 50rpx;
+  color: #000000;
+  font-weight: 800;
+  font-size: 50rpx;
+}
+
+.add-btn {
+  font-size: 36rpx;
+  color: #4b4949;
+  background-color: transparent;
+  border: none;
+  margin-right: 20rpx;
+}
+
+.contact {
+  position: relative;
+  top: 120rpx;
+}
+
+.icon {
+  height: 35rpx;
+  width: 35rpx;
+}
+
+.search {
+  padding: 0 30rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+input {
+  padding-left: 0rpx;
+  font-size: 28rpx;
+  flex-grow: 1;
+  color: rgb(0, 0, 0);
+  margin-left: -10rpx;
+}
+
+.group {
+  padding: 5rpx 40rpx;
+}
+
+.header {
+  color: rgb(85, 85, 85);
+  font-size: 40rpx;
+  font-weight: 1000;
+}
+
+.card {
+  margin: 20rpx 40rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  border: 1rpx solid #ddd;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 28rpx;
+}
+
+.nick {
+  font-size: 22rpx;
+  color: #999;
+}
+
+.line {
+  border-bottom: 1rpx solid #4b4949;
+}
+
+.shortcut {
+  position: fixed;
+  right: 0;
+  top: 400rpx;
+  height: 50%;
+  width: 46rpx;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25rpx;
+  padding: 18rpx 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 1;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.letter {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #4b4949;
+  font-size: 20rpx;
+}
+.container {
+  position: relative;
+}
+
+.add-button {
+  width: 100%;
+  height: 80rpx;
+  background-color: #4b4949;
+  color: white;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.add-text {
+  font-size: 60rpx;
+  color: white;
+}

@@ -1,0 +1,54 @@
+<view class="container">
+  <!-- Title -->
+  <view class="header">
+    <text>New Contact</text>
+  </view>
+
+  <!-- Begin -->
+  <view class="form">
+
+    <!-- Profile Picture -->
+    <view class="form-item">
+      <button class="avatar-btn" bindtap="chooseAvatar" style="height: 233rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx; width: 243rpx">
+        <image class="avatar-img" src="{{avatarUrl}}" mode="aspectFill" wx:if="{{avatarUrl}}"></image>
+        <text wx:if="{{!avatarUrl}}">Add Photo</text>
+      </button>
+    </view>
+
+    <!-- Name -->
+    <view class="form-item">
+      <label>Name</label>
+      <input type="text" placeholder="Fisrt Name" bindinput="onNameInput" />
+      <input type="text" placeholder="Last Name" bindinput="onNameInput" />
+    </view>
+
+    <!-- Birthday -->
+    <view class="form-item">
+      <label>Birthday</label>
+      <input type="text" placeholder="Add Birthday" bindinput="onBirthdayInput" />
+    </view>
+
+    <!-- Phone -->
+    <view class="form-item">
+      <label>Phone</label>
+      <input type="number" placeholder="Add Phone" bindinput="onPhoneInput" />
+    </view>
+
+    <!-- Email -->
+    <view class="form-item">
+      <label>Email</label>
+      <input type="text" placeholder="Add Email" bindinput="onEmailInput" />
+    </view>
+
+    <!-- Address -->
+    <view class="form-item">
+      <label>Address</label>
+      <input type="text" placeholder="Add Address" bindinput="onAddressInput" />
+    </view>
+
+    <!-- Save Button -->
+    <view class="form-item">
+      <button bindtap="saveContact">Save Contact</button>
+    </view>
+  </view>
+</view>

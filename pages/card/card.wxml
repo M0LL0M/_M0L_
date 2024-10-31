@@ -1,0 +1,48 @@
+<view class="contact-detail">
+  <!-- Circular avatar frame -->
+  <view class="avatar-section">
+    <image class="thumbnail" src="{{contact.avatarUrl || '/images/default-avatar.png'}}" mode="aspectFill" />
+    <!-- Modify Avatar Button -->
+    <button class="edit-avatar-btn" bindtap="chooseAvatar">Modify Avatar</button>
+  </view>
+
+  <!-- Basic contact information -->
+  <view class="info-section">
+    <view class="field editable">
+      <view class="label">Name:</view>
+      <input class="value" value="{{contact.name}}" disabled="{{!isEditing}}" bindinput="onNameInput" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">Birthday:</view>
+      <input class="value" value="{{contact.birthday}}" disabled="{{!isEditing}}" bindinput="onBirthdayInput" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">Phone:</view>
+      <input class="value" value="{{contact.phone}}" disabled="{{!isEditing}}" bindinput="onPhoneInput" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">Email:</view>
+      <input class="value" value="{{contact.email}}" disabled="{{!isEditing}}" bindinput="onEmailInput" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">Address:</view>
+      <input class="value" value="{{contact.address}}" disabled="{{!isEditing}}" bindinput="onAddressInput" />
+    </view>
+  </view>
+
+  <!-- Operating Button -->
+  <view class="operation-section">
+    <!-- Modify Contact Button -->
+    <button type="warn" bindtap="onEditContact" wx:if="{{!isEditing}}">Edit Contact</button>
+
+    <!-- Save Contact Button -->
+    <button type="primary" bindtap="onSaveContact" wx:if="{{isEditing}}">Save</button>
+
+    <!-- Delete Contact Button -->
+    <button type="warn" bindtap="onDeleteContact">Delete Contact</button>
+  </view>
+</view>
